@@ -11,9 +11,9 @@ To change to contract to your needs:
 -add or remove paragraphs at will
 
 The template is under the beer licence:
-Feel free to add or change it at will.
-Feedback is most welcome.
-If you like it you are also welcome to invite the author to a beer.
+-Feel free to add or change it at will.
+-Feedback is most welcome.
+-If you like it you are also welcome to invite the author to a beer.
 
-questions and feedback to:
+Questions and feedback to:
 weigner.thomas@gmail.com
