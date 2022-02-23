@@ -1,0 +1,383 @@
+% !TeX program = xelatex
+% !TeX encoding = UTF-8
+% !TeX spellcheck = de_AT
+\documentclass{scrreprt}[12pt,a4paper,twoside,duplex]
+\usepackage[twoside,rmargin=1.8cm,lmargin=1.8cm,tmargin=2cm]{geometry}
+\usepackage{scrjura}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{lmodern}
+\usepackage{wasysym}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage[locale = DE]{siunitx}
+\usepackage[gen]{eurosym}
+\usepackage[fixmale=false]{gender}		% package to switch between gender specific formulations
+\usepackage{booktabs}		% generate nicer tables
+\usepackage{multicol}
+\setlength\columnsep{2em}		% Spacing between columns
+
+%Font
+%\usepackage{avantgar}
+\usepackage{bookman}
+%\usepackage{ncntrsbk}
+
+\definecolor{zuBearbeiten}{RGB}{255, 0, 0}
+% Wenn bearbeitet folgendes verwenden
+%\definecolor{zuBearbeiten}{RGB}{0, 0, 0}
+
+%---Hauptmieter
+\newcommand{\hauptmieterName}{Herbert Homunculus}
+\newcommand{\hauptmieterAddresse}{Bahnsteig 9 3/4, 1030 Wien}
+\newcommand{\hauptmieterGebTag}{02.02.2022}
+\newcommand{\hauptmieterBankname}{Goblinb Bank}
+\newcommand{\hauptmieterIBAN}{AT69 1234 0000 0000 0000}
+\newcommand{\hauptmieterBIC}{GOBOGOBO}
+\newcommand{\mahnkosten}{\euro{6.90}}
+%---Untermieter
+\newcommand{\untermieterName}{Maria Meeple}
+\newcommand{\untermieterGebTag}{02.02.2022}
+\newcommand{\untermieterAdresse}{Regenbogenland 1, 1010 Wien}
+%---Miet Eckdaten
+\newcommand{\mietObjekt}{\textsl{Bahnsteig 9 3/4, 1030 Wien 2.\,OG Rechts}}
+\newcommand{\mietBeginn}{02.02.2022}
+\newcommand{\betriebskostenZuletztErmitteltAm}{02.02.2022}
+\newcommand{\vertragsschlussDatum}{\today}
+\newcommand{\vertragsschlussOrt}{Wien}
+%---Mietkosten
+\newcommand{\mieteGesamt}{\euro{1234.56}}
+\newcommand{\mietKaution}{\euro{678}}
+\newcommand{\mieteZimmer}{\euro{123.45}}
+\newcommand{\mieteGemeinschaftsraeume}{\euro{12.34}}
+\newcommand{\inventarmiete}{\euro{12.34}}
+\newcommand{\betriebskosten}{\euro{12.34}}
+\newcommand{\mietNebenkosten}{\euro{12.34}}
+%---Nebenkosten
+\newcommand{\strom}{\euro{12.34}}
+\newcommand{\gas}{\euro{12.34}}
+\newcommand{\netz}{\euro{12.34}}
+\newcommand{\internet}{\euro{12.34}}
+\newcommand{\mietNebenkostenGesamt}{\euro{123.34}}
+
+% BEGIN FORMAT
+\tolerance 1414
+\hbadness 1414
+\emergencystretch 1.5em
+\hfuzz 0.3pt
+\widowpenalty=10000
+\vfuzz \hfuzz
+\raggedbottom
+\sloppy
+% END FORMAT
+
+\begin{document}
+\chapter*{Mietvertrag}
+\large{Zwischen \textbf{\hauptmieterName} \ geboren am \hauptmieterGebTag, \hauptmieterAddresse ,\ nachfolgend als \textsl{Hauptmieter} bezeichnet und \\ \textbf{\untermieterName} geboren am \untermieterGebTag ,\ nachfolgend als \textsl{\genderfix{Untermieterin()Untermieter}} bezeichnet, wird folgender Mietvertrag vereinbart:}
+
+\begin{contract}
+\Clause{title=Mietsache}
+\label{clause:mietsache}
+
+\begin{enumerate}
+	\item Vermietet wird in der Wohnung \mietObjekt \ das Zimmer mittig Richtung Süden mit \SI{22.3}{\square \meter}. \label{itm:zimmer}
+
+	\item \genderfix{Die Untermieterin()Der Untermieter} hat das Recht auf gemeinschaftliche Benutzung der Gemeinschaftszimmer Küche, Vorraum/Esszimmer, Toilette, Bad, Gang, erhöhtem Lagerraum im Gang und Kellerabteil. \label{itm:gemeinschaftsZimmer}
+	
+	\item \genderfix{Die Untermieterin()Der Untermieter} hat das Recht auf gemeinschaftliche Benutzung des Wohnungsinventars, welches im Hautmietvertrag gelistet ist. Dieses inkludiert zum Beispiel den Gasherd, Kücheneinrichtung, etc.. Dessen Benutzung ist in der Inventarmiete enthalten.\label{itm:inventar}
+
+	\item \genderfix{Die Untermieterin()Der Untermieter} hat das Recht gemeinschaftliche Nutzung des gemeinsamen Inventars der Wohngemeinschaft wie Waschmaschine, Kühlschränke, Regale, Putzutensilien, Geschirr, Gewürze, etc.. Dieses wird gemeinsam von allen Mitbewohner*innen verwendet. Alle Mitbewohner*innen sind für den Erhalt dieses gemeinsamen Inventar verantwortlich.
+	
+	\item Dinge die \genderfix{die Untermieterin()der Untermieter} freiwillig in das gemeinsame Inventar der Wohngemeinschaft übergibt können von allen Mitbewohner*innen gleichberechtigt genutzt werden.
+
+	\item Der Hauptmieter verpflichtet sich, \genderfix{der Untermieterin()dem Untermieter} bei Übergabe der Mieträume
+	folgende Schlüssel auszuhändigen:
+	\begin{itemize}
+	  \item 1 Hausschlüssel
+	  \item 1 Wohnungsschlüssel
+	\end{itemize}
+	Die Beschaffung weiterer Schlüssel durch \genderfix{die Untermieterin()den Untermieter} bedarf der Einwilligung des
+	Hauptmieters und Vermieters. Bei Verlust müssen die Schlüssel von \genderfix{der Untermieterin()dem Untermieter} ersetzt werden.
+\end{enumerate}
+\end{contract}
+
+\begin{contract}
+\Clause{title=Mietzeit}
+\label{clause:mietzeit}
+
+\begin{enumerate}
+  \item Das Mietverhältnis beginnt am
+  \textsl{\mietBeginn}, es läuft auf unbestimmte Zeit, jedoch längstens solange der Hauptmietvertrag läuft.
+
+  \item Die Kün\-di\-gungs\-frist beträgt für \genderfix{die Untermieterin()den Untermieter} sowie den Hauptmieter 3 Monate.
+
+  \item Eine Kündigung muss schriftlich bis zum dritten Werktag des ersten Monats
+  der Kündigung erfolgen.
+  
+  \item Mit Einvernahme des Hauptmieters und aller Untermieter*innen kann eine Kündigung auch innerhalb von einem Monat erfolgen. Voraus gesetzt ein/e passender/e Nachuntermieter*in wird gefunden.
+  
+  \item Wird die Mietsache zu Mietbeginn nicht übergeben, so kann \genderfix{die Untermieterin()der Untermieter} Schadenersatz verlangen, wenn der Hauptmieter die Verzögerung zu vertreten hat. Die Rechte \genderfix{der Untermieterin()des Untermieters} zur Mietminderung oder zur fristlosen Kündigung bleiben unberührt.
+
+ \item Setzt \genderfix{die Untermieterin()der Untermieter} nach Ablauf der Mietzeit den Gebrauch fort, so hat \genderfix{sie()er} als Nutzungsentschädigung die zuletzt vereinbart gewesene Miete zu zahlen. Die Geltendmachung eines darüber hinausgehenden Schadens bleibt vorbehalten.
+\end{enumerate}
+\end{contract}
+
+\begin{contract}
+\Clause{title=Miete und Nebenkosten}
+\label{clause:mietKosten}
+\begin{enumerate}
+	\item Die monatliche Gesamtmiete ergibt sich zu:\quad
+	\begin{tabular}[t]{lr}
+		Miete für Zimmer & \mieteZimmer \\
+		Gemeinschaftsräume & \mieteGemeinschaftsraeume \\
+		Inventarmiete & \inventarmiete \\
+		Betriebskosten & \betriebskosten \\
+		Nebenkosten & \mietNebenkosten \\ \midrule
+		Gesamtmiete & \mieteGesamt \\ \bottomrule[2pt]
+	\end{tabular}
+	\vspace{0.2cm}
+	\begin{itemize}
+		\item Miete für Zimmer \dots Miete für das Zimmer wie in \ref{clause:mietsache}.\ref{itm:zimmer} beschrieben
+
+		\item Gemeinschaftsräume \dots Anteilige Miete für die geteilten Räume wie in \ref{clause:mietsache}.\ref{itm:gemeinschaftsZimmer} beschrieben
+
+		\item Inventarmiete \dots Miete für die geteilten Räume wie in \ref{clause:mietsache}.\ref{itm:inventar} beschrieben
+
+		\item Betriebskosten \dots Anteilige Betriebskosten laut Hauptmietvertrag
+		
+		\item Nebenkosten \dots Anteilige Nebenkosten wie in \ref{clause:mietKosten}.\ref{itm:nebenkosten} beschrieben
+		
+	\end{itemize}
+	\vspace{0.2cm}
+	\item Die Nebenkosten errechnen sich zu:\quad
+	\label{itm:nebenkosten}
+ 	\begin{tabular}[t]{lr}
+	  	Strom & \strom \\
+	  	Gas & \gas \\
+	  	Netz & \netz \\
+	  	Internet & \internet \\ \midrule
+	  	Gesamt Nebenkosten & \mietNebenkostenGesamt \\ \bottomrule[2pt]
+ 	\end{tabular}
+	\vspace{0.2cm}
+
+ 	\item Soweit sich Nebenkosten,Hauptmiete, Inventarmiete oder Betriebskosten erhöhen oder neu entstehen, darf der
+	Hauptmieter die Erhöhung bzw. die neu entstandenen Gesamtmitkosten für \genderfix{die Untermieterin()den Untermieter} nach den
+	gesetzlichen Vorschriften anteilig umlegen. Die sich geänderten Beträge ersetzen die entsprechenden Beträge wie sie hier angegeben sind.
+
+	\item Bei einer Anpassung der Nebenkosten, Miete, Inventarmiete oder Betriebskosten hat der Hauptmieter \genderfix{die Untermieterin()der Untermieter} zeitgerecht zu informieren. Ein sich ergebender Saldo, auch soweit er auf der Abrechnung der Vorschüsse beruht, ist mit der nächsten Mietzahlung auszugleichen.
+\end{enumerate}
+\end{contract}
+
+\begin{contract}
+\Clause{title=Zahlung der Miete und der Nebenkosten}
+\label{clause:zahlungMiete}
+\begin{enumerate}
+    \item Die Miete und Nebenkosten sind monatlich im Voraus, spätestens am 1. des Monats kostenfrei auf das WG-Konto des Hauptmieters zu zahlen. Hiervon abweichend ist die erste Miete jedoch spätestens bei Übergabe der Wohnung  mit 16.12.2021 zu zahlen. Für die Rechtzeitigkeit der Zahlung kommt es nicht auf die Absendung, sondern auf die Ankunft des Geldes an.
+
+	\item Die Miete und die Nebenkosten sind auf das folgende Konto einzuzahlen:
+		\begin{description}
+		  \item[Kontoinhaber] \hauptmieterName
+		  \item[Bank] \hauptmieterBankname
+		  \item[IBAN] \hauptmieterIBAN
+		  \item[BIC] \hauptmieterBIC
+		\end{description}
+
+    \item Bei verspäteter Zahlung kann der Hauptmieter Mahnkosten in Höhe von \textbf{ \mahnkosten}\ je Mahnung, unbeschadet von Verzugszinsen, erheben. Bei Mahnkosten und Verzugszinsen handelt es sich um pauschalierten Schadensersatz. Der Untermieter kann nachweisen, dass ein niedrigerer Schaden entstanden ist.
+\end{enumerate}
+\end{contract}
+
+\begin{contract}
+\Clause{title=Zustand und Übergabe der Mieträume}
+\label{clause:zustand}
+\begin{enumerate}
+	\item Die Aushändigung der Wohnungsschlüssel und damit die Übergabe der
+	Wohnung erfolgt, sofern nichts anderes vereinbart wurde, bei
+	Zahlung der ersten Miete und Kaution.
+	
+	\item Das Zimmer wird vom Hauptmieter in einem bezugsfertigen und sauberen Zustand übergeben.
+\end{enumerate}
+\end{contract}
+
+\begin{contract}
+\Clause{title=Heizung und Warmwasserversorgung}
+\label{clause:heizung}
+\begin{enumerate}
+	\item Eine vorhandene Zentralheizungsanlage wird, soweit es die	Au{\ss}entemperatur erfordert, mindestens aber vom 1.10. bis zum 30.4. (Heizperiode) vom Hauptmieter in Betrieb gehalten. Eine Temperatur von mindestens 20 Grad Celsius In der Zeit von 7 bis 22 Uhr in den an die Sammelheizung angeschlossenen Wohnräumen gilt als Richtwert. Für Räume, die auf Wunsch des Untermieters oder durch diesen mittels Umbaus oder Ausbaus geändert sind, kann eine Erwärmung auf 20 Grad Celsius nicht verlangt werden. Au{\ss}erhalb der Heizperiode wird die Sammelheizung in Betrieb genommen, soweit es die Au{\ss}entemperaturen erfordern. Dabei ist zu berücksichtigen, dass während der Sommermonate Instandhaltungs- und Wartungsarbeiten durchgeführt werden müssen.
+	
+	\item Vom Hauptmieter nicht zu vertretende Betriebsunterbrechungen der Heizungs- und Warmwasserversorgung berechtigen den Untermieter nicht zu Schadenersatzansprüchen.
+	
+	\item Die Kosten für den Gasverbrauch der zentralen Heizungs- und Warmwasserversorgung sind monatliche Vorauszahlungen zu leisten, die ein Teilbetrag der Nebenkosten sind. Bei Änderungen der Mitbewohner*innen und der jährlichen Abschlussrechnung des Energielieferanten werden etwaige Überschüsse oder Nachzahlungen abgerechnet.
+	
+	\item Ist ein Durchlauferhitzer oder Boiler zur Warmwasserbereitung oder/und eine separate Etagenheizung in der Wohnung vorhanden, so tragen alle Bewohner*innen die Betriebs-, Wartungs- und Reinigungskosten gemeinschaftlich. Die Wartung und Reinigung erfolgen jährlich.
+\end{enumerate}
+\end{contract}
+
+\begin{contract}
+\Clause{title={Benutzung der Wohnung, Untervermietung und Tierhaltung}}
+\label{clause:benutzung}
+\begin{enumerate}
+	\item Die Mieträume dürfen  von \genderfix{der Untermieterin()dem Untermieter} nur zu Wohnzwecken genutzt werden. Die 	Gesamtzahl der Personen, die die Wohnung beziehen werden beträgt \textsl{4}. \genderfix{Die Untermieterin()Der Untermieter} ist verpflichtet, \genderfix{ihrer()seiner} gesetzlichen Meldepflicht nachzukommen. Die Anbringung oder das Aufstellen von Schildern, Werbung, Möbeln und dergleichen au{\ss}erhalb der Mieträume bedarf der vorherigen Einwilligung des Hauptmieters und aller anderer Untermieter*innen.	
+
+	\item Ohne vorherige Zustimmung des Hauptmieters dürfen die Mieträume nicht zu anderen Zwecken benutzt werden. Wird die Zustimmung erteilt, so kann \genderfix{die Untermieterin()der Untermieter} zur Zahlung einer erhöhten Miete verpflichtet werden.
+
+	\item Untervermietung oder sonstige Gebrauchsüberlassung der Mieträume oder Teilen davon an Dritte darf nur mit Einwilligung des Hauptmieters erfolgen. Bei unbefugter Untervermietung, kann der Hauptmieter verlangen, dass \genderfix{die Untermieterin()der Untermieter} binnen Monatsfrist das Untermietverhältnis kündigt. Geschieht dies nicht, so kann der Hauptmieter das Hauptmietverhältnis fristlos kündigen. Ist dem Hauptmieter die Einwilligung zur Untervermietung nur bei einer angemessenen
+	Erhöhung der Miete zuzumuten, so kann er die Erlaubnis davon abhängig machen, dass der Untermieter sich mit einer solchen Erhöhung einverstanden erklärt. \genderfix{Die Untermieterin()Der Untermieter} haftet für alle Handlungen oder Unterlassungen \genderfix{der Untermieterin()des Untermieter} in zweiter Instanz oder desjenigen/derjenigen, dem/der der Gebrauch der Mieträume überlassen wurde.
+ 
+	\item Jede Änderung der Nutzung durch Dritte ist dem Hauptmieter sofort anzuzeigen.
+	
+	\item Jede Tierhaltung bedarf der Zustimmung des Hauptmieters. Dies gilt nicht für den vo\-rü\-ber\-geh\-end\-en Aufenthalt von Tieren bis zu 1 Tag (Keine Tierhaltung). Der Hauptmieter kann die Zustimmung verweigern, wenn eine Gefährdung oder Belästigung durch das Tier nicht völlig auszuschlie{\ss}en ist. Eine erteilte Zustimmung kann widerrufen bzw. der vorübergehende Aufenthalt untersagt werden, wenn von dem Tier Störungen oder/und Belästigungen für die Mitbewohner*innen ausgeht. \genderfix{Die Untermieterin()Der Untermieter} haftet für alle Schäden.
+	
+	\item Das Abstellen, Aufbewahren, Lagern usw. jeglicher sperriger Sachen, sei es auch nur vo\-rü\-ber\-geh\-end, au{\ss}erhalb des eignen Zimmers sollte mit den Mitbewohner*innen besprochen werden.
+\end{enumerate}
+\end{contract}
+
+\begin{contract}
+\Clause{title=Internet}
+\label{clause:internet}
+\begin{enumerate}
+	\item Die Nebenkosten beinhalten einen Breitbandinternetanschluss.
+
+	\item Dementsprechend ist in der Wohnung ein WLAN vorhanden und bei Bedarf kann auch ein LAN Kabel gezogen werden.
+\end{enumerate}
+\end{contract}
+
+\begin{contract}
+\Clause{title=Bauliche Ma{\ss}nahmen und Verbesserungen durch den Hauptmieter}
+\label{clause:baulicheMassnahmen}
+\begin{enumerate}
+	\item Der Hauptmieter darf Ausbesserungen und bauliche Änderungen, die zur Erhaltung des Hauses oder der Mieträume oder zur Abwendung drohender Gefahren oder zur Beseitigung von Schäden notwendig werden, ohne Zustimmung des Untermieters vornehmen.
+	
+	\item Ma{\ss}nahmen zur Erhaltung und Verbesserung der Mietsache, zur Einsparung von Energie oder Wasser hat \genderfix{die Untermieterin()der Untermieter} nach Absprache zu dulden.
+\end{enumerate}
+\end{contract}
+
+\begin{contract}
+\Clause{title=Bauliche Änderungen durch den Untermieter}
+\label{clause:baulicheAenderungen}
+\begin{enumerate}
+	\item Bauliche Veränderungen, Um- und Einbauten, insbesondere Änderungen der Installationen, Anbringung von Au{\ss}enjalousien, Markisen und Blumenbrettern sowie die Errichtung und Änderung von Feuerstätten nebst Ofenrohren dürfen nur vorgenommen werden, wenn der Hauptmieter und der Vermieter zuvor eingewilligt hat und eine erforderliche bauaufsichtsamtliche Einwilligung erteilt worden ist, die \genderfix{die Untermieterin()der Untermieter} einzuholen hat. Kosten dürfen dem Hauptmieter nicht entstehen. \label{itm:baulicheAenderungen}
+
+	\item \genderfix{Die Untermieterin()Der Untermieter} haftet für alle Schäden, die dem Hauptmieter oder Dritten aus Ma{\ss}nahmen gemä{\ss} \ref{clause:baulicheAenderungen}.\ref{itm:baulicheAenderungen} entstehen, ohne dass es des Nachweises des Verschuldens bedarf.
+
+	\item \genderfix{Die Untermieterin()Der Untermieter} trägt die Kosten der Entfernung von ihm angelegter oder übernommener Leitungen und für dadurch hervorgerufene Gebäudeschäden.
+	
+	\item \genderfix{Die Untermieterin()Der Untermieter} ist berechtigt eine Einrichtung, mit der \genderfix{sie()er} die Mietsache versehen hat, wegzunehmen. \genderfix{Sie()Er} hat den früheren Zustand wieder herzustellen. Der Hauptmieter kann die Beseitigung und die Wiederherstellung des früheren Zustandes verlangen.
+\end{enumerate}
+\end{contract}
+
+\begin{contract}
+\Clause{title=Instandhaltung der Mieträume}
+\label{clause:instandhaltung}
+\begin{enumerate}
+	\item Zeigt sich ein Mangel der Mietsache oder droht eine Gefahr, so hat \genderfix{die Untermieterin()der Untermieter} dem Hauptmieter dies zur Vermeidung seiner Schadenersatzpflicht unverzüglich anzuzeigen.
+	
+	\item \genderfix{Die Untermieterin()Der Untermieter} hat die seinem unmittelbaren Zugriff unterliegenden Leitungen und Anlagen für Elektrizität und Gas, die sanitären Einrichtungen, Schlösser, Rollläden, Öfen, Herde, Heizkörper, Messeinrichtungen und ähnliche Einrichtungen so zu benutzen und zu bedienen, dass sie nicht beschädigt und nicht mehr als vertragsgemä{\ss} abgenutzt werden.
+	
+	\item Ungezieferbefall hat \genderfix{die Untermieterin()der Untermieter} unverzüglich dem Hauptmieter anzuzeigen. Er hat auftretendes Ungeziefer auf seine Kosten zu beseitigen, soweit \genderfix{sie()er} den Ungezieferbefall zu vertreten hat.
+	
+	\item \genderfix{Die Untermieterin()Der Untermieter} haftet dem Hauptmieter für Schäden, die durch Verletzung der \genderfix{iher()ihm} obliegenden Sorgfalts- und Anzeigepflicht entstehen, insbesondere auch, wenn Ver\-sor\-gungs- und Abflussleitungen, Toiletten-, Heizungsanlagen usw. unsachgemä{\ss} behandelt, die Räume unzureichend gelüftet, gereinigt oder nicht ausreichend gegen Frost geschützt werden.
+	
+	\item \genderfix{Die Untermieterin()Der Untermieter} haftet für Schäden, die durch \genderfix{ihre()seine} Angehörigen, Untermieter, Besucher, Lieferanten, Arbeitnehmer, Handwerker usw. verursacht worden sind.
+	
+	\item \genderfix{Die Untermieterin()Der Untermieter} hat zu beweisen, dass Schäden in \genderfix{ihrem()seinem} ausschli{\ss}lichen. Gefahrenbereich nicht auf \genderfix{ihrem()seinem} Verschulden oder auf dem Verschulden der Personen, für die \genderfix{sie()er} einzustehen hat, beruhen. Etwaige Ansprüche gegen schuldige Dritte tritt der Hauptmieter an den Untermieter ab.
+	
+	\item Die gemeinschaftlichen Einrichtungen werden von dem Hauptmieter und den Mitbewohner*innen gemeinschaftlich in einem	ordnungsgemä{\ss}en Zustand gehalten.
+\end{enumerate}
+\end{contract}
+
+\begin{contract}
+\Clause{title=Kaution und Pfandrecht}
+\label{clause:kaution}
+\begin{enumerate}
+	\item \genderfix{Die Untermieterin()Der Untermieter} erklärt, dass die beim Einzug eingebrachten Sachen \genderfix{ihr()sein} freies Eigentum, nicht gepfändet und nicht verpfändet sind.
+	
+	\item \genderfix{Die Untermieterin()Der Untermieter} ist verpflichtet, den Hauptmieter sofort von einer etwaigen Pfändung eingebrachter Gegenstände unter Angabe des Gerichtsvollziehers und des pfändenden Gläubigers zu benachrichtigen.
+	
+	\item \genderfix{Die Untermieterin()Der Untermieter} leistet dem Hauptmieter Sicherheit (Kaution) in Höhe von \textbf{\mietKaution}, für die Erfüllung seiner Verpflichtungen gegenüber dem Vermieter.
+	
+	\item Die Kaution wird an den/die vorherigen Mitbewohner*in überwiesen und wird dementsprechend bei einem Auszug von dem/der Nachuntermieter*in binnen zwei Monaten zurückerstattet oder bei Beendigung des Hauptmietverhältnisses vom Vermieter nach den Konditionen des Hauptmietvertrags anteilsmä{\ss}ig innerhalb von einem Monat zurückerstattet.
+\end{enumerate}
+\end{contract}
+
+\begin{contract}
+\Clause{title=Besondere Kündigungsgründe und -fristen}
+\begin{enumerate}
+	\item Das Mietverhältnis kann, soweit die vorzeitige Kündigung mit gesetzlicher Frist zulässig ist, bis spätestens zum 3. Werktag eines Monats zum Schluss des ü\-ber\-nä\-chst\-en Monats gekündigt werden.
+	
+	\item Beide Mietparteien können das Mietverhältnis ohne Einhaltung einer Frist kündigen, wenn der andere Vertragsteil seine Verpflichtungen erheblich schuldhaft verletzt.
+	
+	\item Der Hauptmieter kann insbesondere das Mietverhältnis ohne Einhaltung einer Kün\-di\-gungs\-frist aus wichtigem Grund kündigen:
+	\begin{enumerate}
+		\item wenn \genderfix{die Untermieterin()der Untermieter} für zwei aufeinander folgende Termine mit einem Betrag rückständig ist, der eine Monatsmiete übersteigt, oder
+		
+		\item wenn \genderfix{die Untermieterin()der Untermieter} in einem Zeitraum, der sich über mehr als zwei Termine erstreckt, mit einem Betrag in Höhe von zwei Monatsmieten rückständig ist, oder
+		
+		\item wenn \genderfix{die Untermieterin()der Untermieter} oder derjenige/diejenige, dem \genderfix{sie()er} den Gebrauch der Mietsache überlassen hat, ungeachtet einer Abmahnung des Hauptmieters den vertragswidrigen Gebrauch der Mietsache fortsetzt, der die Rechte des Hauptmieters oder eines/er anderen Untermieters*in in erheblichem Ma{\ss}e verletzt, sodass die Fortsetzung des Mietverhältnisses nicht zumutbar ist.
+	\end{enumerate}
+
+	\item Wird das Mietverhältnis durch den Hauptmieter aus wichtigem Grunde gekündigt, so
+	haftet \genderfix{die Untermieterin()der Untermieter} für den Schaden, der dem Hauptmieter dadurch entsteht, dass die
+	Räume nach der Rückgabe leer stehen oder nur billiger vermietet werden müssen,
+	und zwar bis zum Ablauf der vereinbarten Mietzeit, jedoch höchstens für ein Jahr
+	nach der Rückgabe.
+\end{enumerate}
+\end{contract}
+
+\begin{contract}
+\Clause{title=Rückgabe der Mietsache}
+\label{clause:rueckgabe}
+\begin{enumerate}
+	\item Bei Beendigung der Mietzeit sind alle Schlüssel, auch selbst angeschaffte, an den Hauptmieter herauszugeben. Anderenfalls ist der Hauptmieter berechtigt, auf Kosten \genderfix{der Untermieterin()des Untermieters} Ersatzschlüssel zu beschaffen oder soweit dies im Interesse des/der Nachmieters*in erforderlich ist auch die Schlösser zu verändern und dazu Schlüssel zu beschaffen.
+
+	\item \genderfix{Die Untermieterin()Der Untermieter} ist zu folgenden Renovationsarbeiten verpflichtet:
+	\begin{description}
+		\item[Wände und Decken] fachlich richtig streichen (weiss), Dübel und Nägel entfernen, entstandene Löcher schliessen.
+		
+		\item[Mietsache] Im übrigen muss die Mietsache sorgfältig geputzt und gereinigt zu\-rück\-ge\-ge\-ben werden. Für entstandene Schäden ist \genderfix{die Untermieterin()der Untermieter} ersatzpflichtig.
+		
+		\item[Gegenstände] Das zurück gegebene Zimmer muss vollständig ausgeräumt sein.
+	\end{description}
+
+	\item Nach Räumung ist der Hauptmieter nach Ankündigung berechtigt, die Mietsache auf Kosten \genderfix{der Untermieterin()des Untermieter} zu öffnen, zu reinigen, zurück gelassene einzelne Gegenstände zu verwahren und wertloses Gerümpel zu vernichten.\\ \\ Dies gilt auch, falls \genderfix{die Untermieterin()der Untermieter} bereits vor Ablauf des Vertrages ganz oder teilweise auszieht und aus Anzahl und Beschaffenheit etwa zurückgelassener Gegenstände die Absicht der Aufgabe des Mietbesitzes zu erkennen ist. Der Hauptmieter ist in diesem Fall im Interesse des Mietnachfolgers berechtigt, die Mieträume schon vor der endgültigen Räumung in Besitz zu nehmen und ausbessern zu lassen.
+\end{enumerate}
+\end{contract}
+
+\begin{contract}
+\Clause{title=Hausordnung}
+\label{clause:hasuordnung}
+\genderfix{Die Untermieterin()Der Untermieter} erkennt die Hausordnung an. Ein Versto{\ss} gegen die Hausordnung ist ein vertragswidriger Gebrauch der Mietsache. In schwerwiegenden Fällen kann der Hauptmieter nach erfolgloser Abmahnung das
+Vertragsverhältnis ohne Einhaltung einer Kündigungsfrist kündigen. Für alle Schäden, die dem Hauptmieter durch Verletzung oder Nichtbeachtung der Hausordnung und durch Nichterfüllung der Meldepflichten entstehen, ist \genderfix{die Untermieterin()der Untermieter} ersatzpflichtig.
+\end{contract}
+
+\begin{contract}
+\Clause{title=Weitere Vereinbarungen}
+\label{clause:verinbarungen}
+\begin{enumerate}
+	\item Sollte eine der Bestimmungen dieses Vertrages ganz oder teilweise gegen zwingende gesetzliche Vorschriften versto{\ss}en, so soll die entsprechende gesetzliche Regelung an deren Stelle treten.
+
+	\item Die Kaution ist bei Mietbeginn auf das Mietkonto zu überweisen.
+
+	\item \genderfix{Die Untermieterin()Der Untermieter} anerkennt die von der Wohngemeinschaft beschlossenen Verteilerschlüssel zur Abrechnung der Miete, Betriebskosten, Inventarmiete, Nebenkosten.
+	
+	\item Der Hauptmieter verpflichtet sich alle wohn-gemeinschaftlich relevanten Dokumente/Rechnungen für alle Mitbewohner*innen zugänglich zu dokumentieren.
+	
+	\item Mitbewohner*innen inkludieren alle Untermieter*innen sowie den Hauptmieter. Im Kontext der Mitbewohner*innen sind diese untereinander alle gleichberechtigt und haben die gleichen Rechte und Pflichten.
+	
+	\item \genderfix{Die Untermieterin()Der Untermieter} anerkennt etwaige von der Wohngemeinschaft
+	beschlossenen mündliche Vereinbarungen wie zum Beispiel den Putzplan.
+\end{enumerate}
+\end{contract}
+
+\vspace{1cm}
+\vertragsschlussOrt, den \vertragsschlussDatum \\ \\ \\ \\  \\ \\
+\begin{minipage}[tl]{0.4\textwidth}
+	\flushleft
+	\hrule\vspace{1ex} Hauptmieter
+\end{minipage}
+\hspace{0.2\textwidth}
+\begin{minipage}[tr]{0.4\textwidth}
+	\flushleft
+	\hrule\vspace{1ex} \genderfix{Untermieterin()Untermieter}
+\end{minipage}
+\end{document}
