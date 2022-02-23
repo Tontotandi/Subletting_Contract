@@ -2,7 +2,7 @@ subletting contract template:
 =============================
 
 LaTEX template to generate a subletting contract in german with easy change able parameters.
-THe document is set up for compiling with XeLaTEX and TexStudio as editor (magic comments). However, it can be easily changed to another Compiler.
+The code is set up for compiling with XeLaTEX and TexStudio as editor (magic comments). However, it can be easily changed to another compiler.
 
 To change to contract to your needs:
 -fix the parameters (names, dates of birth, addresses, rent, etc.)at the top of the document
