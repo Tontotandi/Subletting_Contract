@@ -16,4 +16,4 @@ The template is under the beer-ware licence:\
 -If you like it you are also welcome to invite the author to a beer.\
 \
 Questions and feedback to:\
-weigner.thomas@gmail.com\
+weigner.thomas@gmail.com
