@@ -10,7 +10,7 @@ To change to contract to your needs:\
 -serach and replace Hauptmieter to fix that gender\
 -add or remove paragraphs at will\
 
-The template is under the beer licence:\
+The template is under the beer-ware licence:\
 -Feel free to add or change it at will.\
 -Feedback is most welcome.\
 -If you like it you are also welcome to invite the author to a beer.\
